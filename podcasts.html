@@ -2,55 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="The AI Band">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The AI Band | All Songs</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="description" content="The AI Band" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The AI Band | Podcast</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
-    <link rel="stylesheet" href="css/nowfont.css" type="text/css">
-    <link rel="stylesheet" href="css/rockville.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css" />
+    <link rel="stylesheet" href="css/nowfont.css" type="text/css" />
+    <link rel="stylesheet" href="css/rockville.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
 
     <!-- Meta Tags for SEO -->
     <meta name="keywords"
-        content="The AI Band, music, technology, innovation, Pabitra Banerjee Songs, Pabitra Banerjee Musician, Rockstar Pabitra Banerjee, Rockstar Bhed">
-    <meta name="author" content="Pabitra Banerjee">
-    <meta name="robots" content="index, follow">
-    <meta name="revisit-after" content="7 days">
-    <meta name="language" content="English">
-    <meta name="generator" content="MB WEBBER'S">
-    <meta name="distribution" content="global">
-    <meta name="rating" content="general">
-    <meta name="referrer" content="no-referrer-when-downgrade">
+        content="The AI Band, music, technology, innovation, Pabitra Banerjee Songs, Pabitra Banerjee Musician, Rockstar Pabitra Banerjee, Rockstar Bhed" />
+    <meta name="author" content="Pabitra Banerjee" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="MB WEBBER'S" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
 
     <!-- Open Graph (OG) Attributes -->
-    <meta property="og:title" content="The AI Band">
+    <meta property="og:title" content="The AI Band" />
     <meta property="og:description"
-        content="Innovative music-tech fusion for memorable gatherings and corporate functions.">
-    <meta property="og:image" content="https://pabitrabanerjee.me/The-AI-Band/img/favicon.png">
-    <meta property="og:url" content="https://pabitrabanerjee.me/The-AI-Band">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="The AI Band">
+        content="Innovative music-tech fusion for memorable gatherings and corporate functions." />
+    <meta property="og:image" content="https://pabitrabanerjee.me/The-AI-Band/img/favicon.png" />
+    <meta property="og:url" content="https://pabitrabanerjee.me/The-AI-Band" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="The AI Band" />
+    <style>
+        .containera {
+            display: flex;
+            align-items: center;
+            background-color: transparent !important;
+            padding: 10px;
+        }
+
+        .image-containera {
+            flex: 0 0 100px;
+            /* Flex-grow, flex-shrink, flex-basis */
+        }
+
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            /* Ensure the image covers the entire box */
+            border-radius: 5%;
+            /* Make the image circular */
+        }
+
+        .content-containera {
+            flex: 1;
+            /* Take up remaining space */
+            padding-left: 20px;
+            /* Add some space between image and content */
+        }
+
+        .podcast-info {
+            font-size: 14px;
+        }
+
+        .title {
+            font-size: 24px;
+        }
+
+        .author {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .containera {
+                flex-direction: row;
+                /* Stack elements vertically on smaller screens */
+                align-items: center;
+            }
+
+            .image-containera,
+            .content-containera {
+                flex: 1 0 auto;
+                /* Reset flex values */
+                padding: 0;
+                text-align: center;
+            }
+
+            .profile-image {
+                margin-bottom: 10px;
+                /* Add space between image and content on smaller screens */
+            }
+        }
+    </style>
+
 </head>
 
 <body>
     <!-- Page Preloder -->
-    <!-- <div id="preloder">
+    <div id="preloder">
         <div class="loader"></div>
-    </div> -->
+    </div>
 
     <!-- Header Section Begin -->
     <header class="header header--normal">
@@ -58,7 +121,7 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2">
                     <div class="header__logo">
-                        <a href="./index"><img src="img/logo.png" alt="" class="logo-name"></a>
+                        <a href="./index"><img src="img/logo.png" alt="" class="logo-name" /></a>
                     </div>
                 </div>
                 <div class="col-lg-10 col-md-10">
@@ -67,8 +130,8 @@
                             <ul>
                                 <li><a href="./index">Home</a></li>
                                 <li><a href="./about">About</a></li>
-                                <li  class="active"><a href="./all-songs">Songs</a></li>
-                                <li><a href="./podcasts">Podcasts</a></li>
+                                <li><a href="./all-songs">Songs</a></li>
+                                <li  class="active"><a href="./podcasts">Podcasts</a></li>
                                 <!-- <li><a href="./discography">Discography</a></li>
                                     <li><a href="./tours">Tours</a></li>
                                     <li><a href="./videos">Videos</a></li>
@@ -105,7 +168,7 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb__links">
                         <a href="./index"><i class="fa fa-home"></i> Home</a>
-                        <span>All Songs</span>
+                        <span>Podcasts</span>
                     </div>
                 </div>
             </div>
@@ -113,23 +176,38 @@
     </div>
     <!-- Breadcrumb End -->
 
-    <!-- Songs List Start -->
     <div style="padding: 20px;">
-        <div style="padding-bottom: 20px;"><iframe style="border-radius:12px"
-                src="https://open.spotify.com/embed/album/21yloRdC0G2uOLp0GREkqo?utm_source=generator" width="100%"
-                height="352" frameBorder="0" allowfullscreen=""
+        <div class="containera">
+            <div class="image-containera">
+                <a href="https://open.spotify.com/show/67V1pf2wwuDoSi2gEZXNE8?si=95862e9d22be4a58"><img src="img/me-guitar.jpg" alt="Pabitra Banerjee" class="profile-image"></a>
+            </div>
+            <div class="content-containera">
+                <span class="podcast-info">Podcast</span>
+                <h1 class="title">Science Spectrum</h1>
+                <span class="author">Pabitra Banerjee</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Podcast List Start -->
+    <div style="padding: 20px">
+        <div style="padding-bottom: 20px">
+            <iframe style="border-radius: 12px"
+                src="https://open.spotify.com/embed/episode/4DZ8q5sL4EvmVkxcL9Z63W?utm_source=generator" width="100%"
+                height="352" frameborder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
         </div>
 
-        <div style="padding-top: 20px; padding-bottom: 20px;"><iframe style="border-radius:12px"
-                src="https://open.spotify.com/embed/album/6tKd1UQkRNau47Qd2J4iKm?utm_source=generator" width="100%"
-                height="352" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe>
+        <div style="padding-top: 20px; padding-bottom: 20px">
+            <iframe style="border-radius: 12px"
+                src="https://open.spotify.com/embed/episode/0RGzfUTPYYGWG9A9af29Lb?utm_source=generator&t=0"
+                width="100%" height="352" frameborder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
         </div>
     </div>
-    <!-- Songs List End -->
+    <!-- Podcast List End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer footer--normal spad set-bg" data-setbg="img/footer-bg.png">
@@ -168,17 +246,21 @@
                     <div class="footer__newslatter">
                         <h4>Stay With me</h4>
                         <form action="#">
-                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Email" />
                             <button type="submit"><i class="fa fa-send-o"></i></button>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="footer__copyright__text">
-                <p>Copyright &copy;
-                    <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is
-                    made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://mbwebbers.tech"
-                        target="_blank">MB WEBBER'S</a>
+                <p>
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved | This template is made with
+                    <i class="fa fa-heart" aria-hidden="true"></i> by
+                    <a href="https://mbwebbers.tech" target="_blank">MB WEBBER'S</a>
                 </p>
             </div>
         </div>
@@ -200,3 +282,5 @@
     <script src="js/jquery.jplayer.min.js"></script>
     <script src="js/jplayerInit.js"></script>
 </body>
+
+</html>
